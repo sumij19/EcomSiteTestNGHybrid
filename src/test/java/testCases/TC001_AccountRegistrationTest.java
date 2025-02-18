@@ -7,9 +7,9 @@ import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
 import testBase.BaseClass;
 
-public class TC001_AccountRegistration extends BaseClass{
+public class TC001_AccountRegistrationTest extends BaseClass{
 	
-	@Test
+	@Test(groups= {"sanity"})
 	public void verifyAccountRegistration() {
 		
 		try {
@@ -24,7 +24,7 @@ public class TC001_AccountRegistration extends BaseClass{
 		registerPage.setFirstName(randomString());
 		registerPage.setLastName(randomString().toUpperCase());
 		registerPage.setEmail(randomString()+"@gmail.com");// randomly generated the email
-		registerPage.setTelephone(randomeNumber());
+		registerPage.setTelephone(randomNumber());
 		
 		String password=randomAlphaNumeric();
 		

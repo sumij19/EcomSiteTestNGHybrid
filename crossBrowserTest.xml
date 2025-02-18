@@ -26,6 +26,14 @@
     </classes>
   </test> <!-- Test -->
   
+  <test  name="firefoxTest">
   
+  <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="firefox"/>
+    
+    <classes>
+      <class name="testCases.TC001_AccountRegistration"/>
+    </classes>
+  </test> <!-- Test -->
     
 </suite> <!-- Suite -->
